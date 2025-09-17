@@ -655,7 +655,7 @@ instala_ffmpeg_base() {
 
       if [ "${ARCH}" = "x86_64" ]; then
         if [ "${UBUNTU_VERSION}" = "20.04" ] || [ "${UBUNTU_VERSION}" = "22.04" ]; then
-          FFMPEG_FILE="ffmpeg-n6.1-latest-linux64-gpl-6.1.tar.xz"
+          FFMPEG_FILE="ffmpeg-n6.1.1-latest-linux64-gpl-6.1.tar.xz"
           wget -q https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/${FFMPEG_FILE}
           if [ $? -ne 0 ]; then
             printf "${RED} >> Erro ao baixar o arquivo ${FFMPEG_FILE}. Pressione Enter para continuar...${WHITE} \n"
